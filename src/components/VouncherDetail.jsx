@@ -6,7 +6,8 @@ import { useSWRConfig } from 'swr';
 import toast from 'react-hot-toast';
 import { FcViewDetails } from "react-icons/fc";
 import { Link } from 'react-router-dom';
-const VouncherDetail = ({vouncher:{id,CustomerName,CustomerEmail,SaleDate,date},dataAll}) => {
+const VouncherDetail = ({vouncher:{id,customer_name,voucher_id,customer_email,net_total
+  ,created_at},dataAll}) => {
 
     const [loading, setLoading] = useState(false)
     const { mutate } = useSWRConfig()
@@ -14,9 +15,9 @@ const VouncherDetail = ({vouncher:{id,CustomerName,CustomerEmail,SaleDate,date},
       const deleteHandler=async ()=>{
         setLoading(true)
      
-          await fetch(import.meta.env.VITE_API_URL+"/vouncher/"+id,{method:"DELETE"})
+          await fetch(import.meta.env.VITE_API_URL+"/vouchers/"+id,{method:"DELETE"})
          
-        await  mutate(import.meta.env.VITE_API_URL+"/vouncher")
+        await  mutate(import.meta.env.VITE_API_URL+"/vouchers")
        
        
          setLoading(false)
@@ -28,22 +29,29 @@ const VouncherDetail = ({vouncher:{id,CustomerName,CustomerEmail,SaleDate,date},
     <tr className="odd:bg-white odd::bg-gray-900 even:bg-gray-50 border-b   ">
 
     <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-        {dataAll+1}
+        {id}
       </th>
     
       <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-     {CustomerName}
+<div className=' flex flex-col '>
+  <span className='text-base'> {customer_name}   </span>
+<span className=' text-sm text-stone-500'>  {customer_email} </span>
+
+</div>
       </td>
-    
+      <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+     {voucher_id}
+      </td>
       
       <td className="px-6 py-4  text-center">
-      {CustomerEmail}
+      {net_total
+      }
       </td>
     
       
       <td className="px-6 py-4  text-end  ">
       
-    <SetDate date={date} />
+    <SetDate date={created_at} />
       
       </td>
       

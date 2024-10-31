@@ -15,7 +15,7 @@ dotPulse.register()
 // Default values shown
 
 
-const ProductRole = ({ product: { id,productName,price,time },data}) => {
+const ProductRole = ({ product: { id, product_name,price,created_at,updated_at },data}) => {
   const [loading, setLoading] = useState(false)
   const { mutate } = useSWRConfig()
 
@@ -30,8 +30,10 @@ const ProductRole = ({ product: { id,productName,price,time },data}) => {
        setLoading(false)
  
     }
-    console.log(data.length)
-    let create_at=new Date(time);
+
+    let create_at=new Date(created_at);
+    let new_at=new Date(updated_at);
+    console.log(data)
   
   return (
     <>
@@ -44,7 +46,7 @@ const ProductRole = ({ product: { id,productName,price,time },data}) => {
   </th>
 
   <td scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-    {productName}
+    {product_name}
   </td>
 
   
@@ -58,6 +60,12 @@ const ProductRole = ({ product: { id,productName,price,time },data}) => {
 <SetDate  date={create_at} />
   
   </td>
+  <td className="px-6 py-4  text-end  ">
+  
+  <SetDate  date={new_at} />
+    
+    </td>
+    
   
   <td className="px-6 py-4  text-end flex flex-row gap-[4px] justify-end">
 

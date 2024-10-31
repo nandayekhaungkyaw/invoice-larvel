@@ -22,7 +22,8 @@ const ProductEditCard = () => {
    const  fetcher = (...args) => fetch(...args).then(res => res.json())
     const { data, error, isLoading } = useSWR(import.meta.env.VITE_API_URL+"/products/"+id, fetcher)
     const { mutate } = useSWRConfig()
-    console.log(data)
+    mutate(import.meta.env.VITE_API_URL+"/products/"+id)
+    console.log(data?.data)
 
   const navigate=useNavigate()
 
@@ -46,7 +47,7 @@ const ProductEditCard = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({price:data.price,productName:data.productName,confirmCheck:data.confirmCheck,time:data.time}),
+        body: JSON.stringify({price:data.price,product_name:data.productName,created_at:data.time}),
     })
   
 
@@ -62,13 +63,13 @@ navigate("/productPage")
    <>
    {isLoading ? <SkeletonLoadingEdit/>: ( <div>
       <div className="flex flex-col gap-[16px] mt-[26px] md:w-1/2 w-full">
-        <h2 className="text-2xl font-semibold">Create New Product</h2>
+        <h2 className="text-2xl font-semibold">Update Product</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in
           sed accusamus distinct
         </p>
       </div>
-      <form
+      {data?.data && (<form
         action=""
         onSubmit={handleSubmit(onSubmit)}
         className="mt-[26px] flex flex-col gap-[16px]"
@@ -93,7 +94,7 @@ navigate("/productPage")
                 ? " focus:border-red-500  dark:focus:ring-red-600 focus:ring--500"
                 : " focus:border-blue-500  dark:focus:ring-neutral-600 focus:ring-blue-500"
             } disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500`}
-           defaultValue={`${data.productName}`}
+           defaultValue={`${data?.data.product_name}`}
             aria-describedby="hs-input-helper-text"
           />
 
@@ -125,7 +126,7 @@ navigate("/productPage")
             {...register("price", { required: true ,minLength:3,maxLength:4})}
             id="price"
             className="py-3 border-1 border  border-slate-200 px-4 block w-full rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-            defaultValue={`${data.price}`}
+            defaultValue={`${data?.data.price}`}
             aria-describedby="hs-input-helper-text"
           />
             {errors.price?.type === "required" && (
@@ -188,7 +189,8 @@ navigate("/productPage")
 ></l-ring>}
           </button>
         </div>
-      </form>
+        
+      </form>)}
     </div>)}
    
    </>

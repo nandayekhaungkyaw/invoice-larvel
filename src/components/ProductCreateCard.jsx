@@ -36,8 +36,9 @@ const ProductCreateCard = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          accept :"application/json"
         },
-        body: JSON.stringify({price:data.price,productName:data.productName,confirmCheck:data.confirmCheck,time:data.time}),
+        body: JSON.stringify({price:data.price,product_name:data.productName,created_at:data.time}),
     })
   
 if(  data.backMenu==true){

@@ -1,448 +1,50 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "productName": "Wireless Headphones",
-      "time": "2024-09-12T14:30:00Z",
-      "price": 99.99
-    },
-    {
-      "id": 2,
-      "productName": "Smartphone",
-      "time": "2024-09-12T10:15:00Z",
-      "price": 799.99
-    },
-    {
-      "id": 3,
-      "productName": "Laptop",
-      "time": "2024-09-12T08:45:00Z",
-      "price": 1199.99
-    },
-    {
-      "id": 4,
-      "productName": "4K Monitor",
-      "time": "2024-09-11T12:00:00Z",
-      "price": 349.99
-    },
-    {
-      "id": 5,
-      "productName": "Bluetooth Speaker",
-      "time": "2024-09-11T16:20:00Z",
-      "price": 49.99
-    },
-    {
-      "id": 6,
-      "productName": "Gaming Console",
-      "time": "2024-09-10T19:35:00Z",
-      "price": 499.99
-    },
-    {
-      "id": 7,
-      "productName": "Smartwatch",
-      "time": "2024-09-10T13:50:00Z",
-      "price": 199.99
-    },
-    {
-      "id": 8,
-      "productName": "Tablet",
-      "time": "2024-09-09T09:30:00Z",
-      "price": 299.99
-    },
-    {
-      "id": 9,
-      "productName": "VR Headset",
-      "time": "2024-09-09T17:45:00Z",
-      "price": 399.99
-    },
-    {
-      "id": 10,
-      "productName": "External Hard Drive",
-      "time": "2024-09-08T11:25:00Z",
-      "price": 89.99
-    },
-    {
-      "price": "1200",
-      "productName": "Laptop2",
-      "confirmCheck": true,
-      "time": "2024-09-23T05:50:10.460Z",
-      "id": 11
-    },
-    {
-      "price": "2500",
-      "productName": "laptop-4",
-      "confirmCheck": true,
-      "time": "2024-09-27T05:51:26.555Z",
-      "id": 12
-    },
-    {
-      "price": "2000",
-      "productName": "soelaptop",
-      "confirmCheck": true,
-      "time": "2024-10-01T15:06:02.820Z",
-      "id": 13
-    }
+  "data": [
+      {
+          "id": 17,
+          "product_name": "SEO Content Creation",
+          "price": "300.00",
+          "created_at": "2024-05-22T11:15:00.000000Z",
+          "updated_at": "2024-10-13T03:13:25.000000Z"
+      },
+      {
+          "id": 3,
+          "product_name": "SEO Optimization Service",
+          "price": "300.00",
+          "created_at": "2023-05-18T08:30:00.000000Z",
+          "updated_at": "2023-12-19T10:20:00.000000Z"
+      }
   ],
-  "vouncher": [
-    {
-      "VouncherID": "VC-LZUU6ILWW",
-      "CustomerName": "aung zaw hein",
-      "CustomerEmail": "aung@gmail.com",
-      "SaleDate": "2024-09-23",
-      "confirmCheck": true,
-      "total": 4579.879999999999,
-      "netTotal": 4900.471599999999,
-      "tax": 320.59159999999997,
-      "Lists": [
-        {
-          "id": 1727108067433,
-          "productName": "4K Monitor",
-          "price": 349.99,
-          "time": "2024-09-23T16:14:27.433Z",
-          "quantity": 8,
-          "index": 1
-        },
-        {
-          "id": 1727108077913,
-          "productName": "Smartphone",
-          "price": 799.99,
-          "time": "2024-09-23T16:14:37.913Z",
-          "quantity": 2,
-          "index": 2
-        },
-        {
-          "id": 1727108081160,
-          "productName": "External Hard Drive",
-          "price": 89.99,
-          "time": "2024-09-23T16:14:41.160Z",
-          "quantity": 2,
-          "index": 3
-        }
+  "links": {
+      "first": "https://voucher-app-api.ygnsh.com/api/v1/products?q=seo&sort_by=id&sort_direction=desc&limit=5&page=1",
+      "last": "https://voucher-app-api.ygnsh.com/api/v1/products?q=seo&sort_by=id&sort_direction=desc&limit=5&page=1",
+      "prev": null,
+      "next": null
+  },
+  "meta": {
+      "current_page": 1,
+      "from": 1,
+      "last_page": 1,
+      "links": [
+          {
+              "url": null,
+              "label": "&laquo; Previous",
+              "active": false
+          },
+          {
+              "url": "https://voucher-app-api.ygnsh.com/api/v1/products?q=seo&sort_by=id&sort_direction=desc&limit=5&page=1",
+              "label": "1",
+              "active": true
+          },
+          {
+              "url": null,
+              "label": "Next &raquo;",
+              "active": false
+          }
       ],
-      "date": "2024-09-23T16:15:10.047Z",
-      "id": 4
-    },
-    {
-      "VouncherID": "VC-3AIR57JQP",
-      "CustomerName": "su su",
-      "CustomerEmail": "su@gnail.com",
-      "SaleDate": "2024-09-23",
-      "confirmCheck": true,
-      "total": 3799.94,
-      "netTotal": 4065.9358,
-      "tax": 265.99580000000003,
-      "Lists": [
-        {
-          "id": 1727108244550,
-          "productName": "Smartphone",
-          "price": 799.99,
-          "time": "2024-09-23T16:17:24.550Z",
-          "quantity": 4,
-          "index": 1
-        },
-        {
-          "id": 1727108247797,
-          "productName": "Tablet",
-          "price": 299.99,
-          "time": "2024-09-23T16:17:27.797Z",
-          "quantity": 2,
-          "index": 2
-        }
-      ],
-      "date": "2024-09-23T16:17:47.748Z",
-      "id": 5
-    },
-    {
-      "VouncherID": "VC-4ABNEQCHP",
-      "CustomerName": "test",
-      "CustomerEmail": "test@gmail.com",
-      "SaleDate": "2024-09-27",
-      "confirmCheck": true,
-      "total": 10000,
-      "netTotal": 10700,
-      "tax": 700.0000000000001,
-      "Lists": [
-        {
-          "id": 1727416551493,
-          "productName": "laptop-4",
-          "price": "2500",
-          "time": "2024-09-27T05:55:51.493Z",
-          "quantity": 4,
-          "index": 1
-        }
-      ],
-      "date": "2024-09-27T05:56:10.051Z",
-      "id": 10
-    },
-    {
-      "VouncherID": "VC-H6BD21ZUA",
-      "CustomerName": "kaung kaung",
-      "CustomerEmail": "kyaw@gmial.com",
-      "SaleDate": "2024-10-01",
-      "confirmCheck": true,
-      "goVouncer": true,
-      "total": 1199.96,
-      "netTotal": 1283.9572,
-      "tax": 83.9972,
-      "Lists": [
-        {
-          "id": 1727794750231,
-          "productName": "Tablet",
-          "price": 299.99,
-          "time": "2024-10-01T14:59:10.231Z",
-          "quantity": 4,
-          "index": 1
-        }
-      ],
-      "date": "2024-10-01T14:59:11.444Z",
-      "id": 14
-    },
-    {
-      "VouncherID": "VC-M502W0K31",
-      "CustomerName": "soe moe kyaw",
-      "CustomerEmail": "soe@gmail.com",
-      "SaleDate": "2024-10-01",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 2999.98,
-      "netTotal": 3209.9786,
-      "tax": 209.9986,
-      "Lists": [
-        {
-          "id": 1727795175304,
-          "productName": "soelaptop",
-          "price": "2000",
-          "time": "2024-10-01T15:06:15.304Z",
-          "quantity": 1,
-          "index": 1
-        },
-        {
-          "id": 1727795180014,
-          "productName": "Gaming Console",
-          "price": 499.99,
-          "time": "2024-10-01T15:06:20.014Z",
-          "quantity": 2,
-          "index": 2
-        }
-      ],
-      "date": "2024-10-01T15:06:51.972Z",
-      "id": 19
-    },
-    {
-      "VouncherID": "VC-IMQM1T03I",
-      "CustomerName": "aung zaw hein",
-      "CustomerEmail": "kyaw@gmail.com",
-      "SaleDate": "2024-10-01",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 1399.96,
-      "netTotal": 1497.9572,
-      "tax": 97.9972,
-      "Lists": [
-        {
-          "id": 1727796737692,
-          "productName": "4K Monitor",
-          "price": 349.99,
-          "time": "2024-10-01T15:32:17.692Z",
-          "quantity": 4,
-          "index": 1
-        }
-      ],
-      "date": "2024-10-01T15:32:20.258Z",
-      "id": 25
-    },
-    {
-      "VouncherID": "VC-IA1YAMJVN",
-      "CustomerName": "kaung kaung",
-      "CustomerEmail": "kaung@gmail.com",
-      "SaleDate": "2024-10-02",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 10799.939999999999,
-      "netTotal": 11555.9358,
-      "tax": 755.9958,
-      "Lists": [
-        {
-          "id": 1727867185157,
-          "productName": "soelaptop",
-          "price": "2000",
-          "time": "2024-10-02T11:06:25.157Z",
-          "quantity": 4,
-          "index": 1
-        },
-        {
-          "id": 1727867192968,
-          "productName": "Gaming Console",
-          "price": 499.99,
-          "time": "2024-10-02T11:06:32.968Z",
-          "quantity": 4,
-          "index": 2
-        },
-        {
-          "id": 1727867196598,
-          "productName": "VR Headset",
-          "price": 399.99,
-          "time": "2024-10-02T11:06:36.598Z",
-          "quantity": 2,
-          "index": 3
-        }
-      ],
-      "date": "2024-10-02T11:06:40.830Z",
-      "id": 27
-    },
-    {
-      "VouncherID": "VC-KQB29KQZ7",
-      "CustomerName": "aung zaw hein",
-      "CustomerEmail": "aung@gmail.com",
-      "SaleDate": "2024-10-02",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 8799.98,
-      "netTotal": 9415.9786,
-      "tax": 615.9986,
-      "Lists": [
-        {
-          "id": 1727868655446,
-          "productName": "soelaptop",
-          "price": "2000",
-          "time": "2024-10-02T11:30:55.446Z",
-          "quantity": 4,
-          "index": 1
-        },
-        {
-          "id": 1727868669382,
-          "productName": "VR Headset",
-          "price": 399.99,
-          "time": "2024-10-02T11:31:09.382Z",
-          "quantity": 2,
-          "index": 2
-        }
-      ],
-      "date": "2024-10-02T11:31:13.308Z",
-      "id": 31
-    },
-    {
-      "VouncherID": "VC-IW1SNSHWB",
-      "CustomerName": "kaung kaung",
-      "CustomerEmail": "kaung@gmial.com",
-      "SaleDate": "2024-10-02",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 2999.94,
-      "netTotal": 3209.9358,
-      "tax": 209.99580000000003,
-      "Lists": [
-        {
-          "id": 1727868852589,
-          "productName": "4K Monitor",
-          "price": 349.99,
-          "time": "2024-10-02T11:34:12.589Z",
-          "quantity": 4,
-          "index": 1
-        },
-        {
-          "id": 1727868857884,
-          "productName": "Smartphone",
-          "price": 799.99,
-          "time": "2024-10-02T11:34:17.884Z",
-          "quantity": 2,
-          "index": 2
-        }
-      ],
-      "date": "2024-10-02T11:34:28.715Z",
-      "id": 32
-    },
-    {
-      "VouncherID": "VC-C5QML744P",
-      "CustomerName": "kaung kaung kaung",
-      "CustomerEmail": "hello@gmail.com",
-      "SaleDate": "2024-10-02",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 2799.95,
-      "netTotal": 2995.9465,
-      "tax": 195.9965,
-      "Lists": [
-        {
-          "id": 1727869620367,
-          "productName": "Gaming Console",
-          "price": 499.99,
-          "time": "2024-10-02T11:47:00.367Z",
-          "quantity": 4,
-          "index": 1
-        },
-        {
-          "id": 1727869623862,
-          "productName": "Smartphone",
-          "price": 799.99,
-          "time": "2024-10-02T11:47:03.862Z",
-          "quantity": 1,
-          "index": 2
-        }
-      ],
-      "date": "2024-10-02T11:47:11.434Z",
-      "id": 33
-    },
-    {
-      "VouncherID": "VC-NRQXJLBSG",
-      "CustomerName": "soe moe kyaw",
-      "CustomerEmail": "soe@gmail.com",
-      "SaleDate": "2024-10-02",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 13199.98,
-      "netTotal": 14123.9786,
-      "tax": 923.9986,
-      "Lists": [
-        {
-          "id": 1727870844316,
-          "productName": "4K Monitor",
-          "price": 349.99,
-          "time": "2024-10-02T12:07:24.316Z",
-          "quantity": 2,
-          "index": 1
-        },
-        {
-          "id": 1727870848380,
-          "productName": "laptop-4",
-          "price": "2500",
-          "time": "2024-10-02T12:07:28.380Z",
-          "quantity": 5,
-          "index": 2
-        }
-      ],
-      "date": "2024-10-02T12:07:45.161Z",
-      "id": 34
-    },
-    {
-      "VouncherID": "VC-56ELF2R2S",
-      "CustomerName": "kyi kyi",
-      "CustomerEmail": "aung@gmail.com",
-      "SaleDate": "2024-10-02",
-      "confirmCheck": true,
-      "goVouncher": true,
-      "total": 10699.98,
-      "netTotal": 11448.9786,
-      "tax": 748.9986,
-      "Lists": [
-        {
-          "id": 1727870962570,
-          "productName": "laptop-4",
-          "price": "2500",
-          "time": "2024-10-02T12:09:22.570Z",
-          "quantity": 4,
-          "index": 1
-        },
-        {
-          "id": 1727870965898,
-          "productName": "4K Monitor",
-          "price": 349.99,
-          "time": "2024-10-02T12:09:25.898Z",
-          "quantity": 2,
-          "index": 2
-        }
-      ],
-      "date": "2024-10-02T12:09:30.057Z",
-      "id": 35
-    }
-  ]
+      "path": "https://voucher-app-api.ygnsh.com/api/v1/products",
+      "per_page": 5,
+      "to": 2,
+      "total": 2
+  }
 }
